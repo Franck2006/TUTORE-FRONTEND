@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 25 34 / var(--tw-bg-opacity, 1));
+}
+
+body {
+  background-color: rgb(16 25 34 / var(--tw-bg-opacity, 1));
+}

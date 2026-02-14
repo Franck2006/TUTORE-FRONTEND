@@ -1,8 +1,24 @@
+import Herosection from "./components/Herosection";
+import Navbar from "./components/navbar";
+import BtnFilter from "./components/BtnFilter";
+import ProjectPannel from "./components/ProjectPannel";
+import Reload from "./components/Reload"
+import Footer from "./components/Footer";
+
+<link rel="stylesheet" href="style.css" />
+
 function App() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold underline"> this is the first commit of Franck </h1>
+      <Navbar/>
+      <div className=" px-1 md:px-12  flex flex-col gap-10">
+        <Herosection/>
+        < BtnFilter/>
+        < ProjectPannel />
+        <Reload/>
+        <Footer/>
+      </div>
     </>
   )
 }
