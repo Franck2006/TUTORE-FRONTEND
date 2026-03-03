@@ -1,16 +1,46 @@
+import type { Type } from "../Type"
+
 const Card = () => {
-const projects: string[] = [
-    "","","","",""
+const projects: Type.Project[] = [
+    {
+        id: 1,
+        title: "Project 1",
+        description: "Description of Project 1",
+        imageUrl: "https://i.pinimg.com/736x/b2/61/13/b261131de5f2998908ff3859fba8301e.jpg",
+        technologies: ["React", "TypeScript", "Tailwind CSS"]
+    },
+     {
+        id: 1,
+        title: "Project 1",
+        description: "Description of Project 1",
+        imageUrl: "https://i.pinimg.com/736x/d6/04/ef/d604efa83a2588a4cf6f3e55ed5b9a22.jpg",
+        technologies: ["React", "TypeScript", "Tailwind CSS"]
+    },
+     {
+        id: 1,
+        title: "Project 1",
+        description: "Description of Project 1",
+        imageUrl: "https://i.pinimg.com/1200x/b8/c5/31/b8c5312e485d5564f69fb3e265cc25a4.jpg",
+        technologies: ["React", "TypeScript", "Tailwind CSS"]
+    },
+     {
+        id: 1,
+        title: "Project 1",
+        description: "Description of Project 1",
+        imageUrl: "https://i.pinimg.com/1200x/dc/de/5d/dcde5dd451acb6520cdd19820f7f1e38.jpg",
+        technologies: ["React", "TypeScript", "Tailwind CSS"]
+    }
+
 ]
   return (
     <>
-        {projects.map( (project: string): any => (
+        {projects.map( (project: Type.Project): any => (
         <div 
             className="group bg-slate-800/40 border  border-slate-800 rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-primary/5 transition-all duration-300 flex flex-col"
-            key={project}
+            key={project.id}
         >
             <div className="aspect-video relative overflow-hidden  bg-slate-800">
-                <img className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Code editor interface with syntax highlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsD07LnZVZmqEqM-9cB5D4MUmra8_tNQZ8vklFnGFAdVe4VOEmFr-o7qYaiVSmdxCJJX-jgRW8WOEeYveRBYIsZJZ6o2RH3jUKaxgOxShwcoJW-gGml46KvYZeQ1MENNBgWypGFJn-558CxRDXP1aUgG8kiSRlUuKpkCUdafFk77Q4s9IaGxwEXUbAVlSTONjDMwtzaWLCU4wJN7aZbDNqXz7evTHuv4K1JtQqhL2AhXNizoHGCsCW80FuBCCmzBwKCIvQaXDFmxc"/>
+                <img className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Code editor interface with syntax highlighting" src={project.imageUrl}/>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
                     <span className="text-white text-xs font-medium bg-primary/80 backdrop-blur px-2 py-1 rounded">Next.js + Tailwind</span>
                 </div>

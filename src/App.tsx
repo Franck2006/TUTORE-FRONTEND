@@ -5,8 +5,6 @@ import ProjectPannel from "./components/ProjectPannel";
 import Reload from "./components/Reload"
 import Footer from "./components/Footer";
 
-<link rel="stylesheet" href="style.css" />
-
 function App() {
 
   return (
