@@ -57,7 +57,7 @@ const projects: Type.Project[] = [
                     <img className="w-8 h-8 rounded-full border  border-slate-700" data-alt="Male developer profile picture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlVTP1UhOVaD0BYcfcJZlDU4CWtumGoryQuZSrRK6gmfstHJLol4o6bGHzbeZKORbvjDmcJno8FHhREO1gm_EFwIi5DrPTZhGlynOiC_Hxob3oOdeeCtsPexIEcgpqtz1FuuoEkCUmbs0KydLRGeFn4SvXRnAgRI27QzAhQcJfkpqamaRgTdLg2ZpPtacF9Q3h060-GiVxH3e9D8C4YzXxsWq3PgrulqR58B9NdHT6AJSv-yhN9GxV0vPEyPLQMRVB-Y5cT9FJQ-g"/>
                     <span className="text-xs font-medium  text-slate-400">Alex Rivers</span>
                 </div>
-                <button className="bg-primary/10 hover:bg-primary text-primary hover:text-white px-3 py-1.5 rounded text-xs font-bold transition-all">View Project</button>
+                <button className="bg-primary/10 hover:bg-primary text-primary text-white/50 hover:text-white px-3 py-1.5 rounded text-xs font-bold transition-all">View Project</button>
             </div>
         </div>
         ))}

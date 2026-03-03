@@ -2,7 +2,7 @@
 export default function Footer() {
     const date_time: Date= new Date()
   return (
-   <footer className="border-t border-slate-800 mt-20 bg-white bg-background-dark py-12">
+   <footer className="border-t border-slate-800 mt-20 bg-slate-800/40 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
         <div className="col-span-1 md:col-span-2">
