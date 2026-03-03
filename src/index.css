@@ -8,11 +8,7 @@ button {
   cursor: pointer;
 }
 
-body {
+body,nav {
   --tw-bg-opacity: 1;
-  background-color: rgb(16 25 34 / var(--tw-bg-opacity, 1));
-}
-
-body,nav{
   background-color: rgb(16 25 34 / var(--tw-bg-opacity, 1));
 }

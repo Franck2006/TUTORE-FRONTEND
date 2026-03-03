@@ -5,5 +5,12 @@ export namespace Type{
         description: string;
         imageUrl: string;
         technologies: string[];
+        author: Author;
     }
+}
+
+export interface Author {
+    image: string;
+    name: string;
+    lastname: string;
 }

@@ -7,28 +7,48 @@ const projects: Type.Project[] = [
         title: "Project 1",
         description: "Description of Project 1",
         imageUrl: "https://i.pinimg.com/736x/b2/61/13/b261131de5f2998908ff3859fba8301e.jpg",
-        technologies: ["React", "TypeScript", "Tailwind CSS"]
+        technologies: ["React", "TypeScript", "Tailwind CSS"],
+        author:{
+            image:"https://i.pinimg.com/736x/eb/76/a4/eb76a46ab920d056b02d203ca95e9a22.jpg",
+            name:"dan",
+            lastname:"akd"
+        }
     },
      {
         id: 1,
         title: "Project 1",
         description: "Description of Project 1",
         imageUrl: "https://i.pinimg.com/736x/d6/04/ef/d604efa83a2588a4cf6f3e55ed5b9a22.jpg",
-        technologies: ["React", "TypeScript", "Tailwind CSS"]
+        technologies: ["React", "TypeScript", "Tailwind CSS"],
+        author:{
+            image:"https://i.pinimg.com/736x/a6/a5/fb/a6a5fba4c19b8297117275ade107c205.jpg",
+            name:"victor",
+            lastname:"wa"
+        }
     },
      {
         id: 1,
         title: "Project 1",
         description: "Description of Project 1",
-        imageUrl: "https://i.pinimg.com/1200x/b8/c5/31/b8c5312e485d5564f69fb3e265cc25a4.jpg",
-        technologies: ["React", "TypeScript", "Tailwind CSS"]
+        imageUrl: "https://i.pinimg.com/1200x/6a/34/49/6a3449c78170c5bc54683843ca2c59eb.jpg",
+        technologies: ["React", "TypeScript", "Tailwind CSS"],
+        author:{
+            image:"https://i.pinimg.com/736x/eb/76/a4/eb76a46ab920d056b02d203ca95e9a22.jpg",
+            name:"franck",
+            lastname:"amani"
+        }
     },
      {
         id: 1,
         title: "Project 1",
         description: "Description of Project 1",
         imageUrl: "https://i.pinimg.com/1200x/dc/de/5d/dcde5dd451acb6520cdd19820f7f1e38.jpg",
-        technologies: ["React", "TypeScript", "Tailwind CSS"]
+        technologies: ["React", "TypeScript", "Tailwind CSS"],
+        author:{
+            image:"https://i.pinimg.com/736x/83/cc/b8/83ccb84db878aa483257cd0e8b6dd354.jpg",
+            name:"dan",
+            lastname:"akd"
+        }
     }
 
 ]
@@ -54,8 +74,8 @@ const projects: Type.Project[] = [
             </div>
             <div className="px-5 pb-5 flex items-center justify-between mt-auto border-t  border-slate-800/50 pt-4">
                 <div className="flex items-center gap-2">
-                    <img className="w-8 h-8 rounded-full border  border-slate-700" data-alt="Male developer profile picture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlVTP1UhOVaD0BYcfcJZlDU4CWtumGoryQuZSrRK6gmfstHJLol4o6bGHzbeZKORbvjDmcJno8FHhREO1gm_EFwIi5DrPTZhGlynOiC_Hxob3oOdeeCtsPexIEcgpqtz1FuuoEkCUmbs0KydLRGeFn4SvXRnAgRI27QzAhQcJfkpqamaRgTdLg2ZpPtacF9Q3h060-GiVxH3e9D8C4YzXxsWq3PgrulqR58B9NdHT6AJSv-yhN9GxV0vPEyPLQMRVB-Y5cT9FJQ-g"/>
-                    <span className="text-xs font-medium  text-slate-400">Alex Rivers</span>
+                    <img className="w-8 h-8 rounded-full border  border-slate-700" data-alt="Male developer profile picture" src={project.author.image}/>
+                    <span className="text-xs font-medium  text-slate-400 capitalize">{project.author.name} {project.author.lastname}</span>
                 </div>
                 <button className="bg-primary/10 hover:bg-primary text-primary text-white/50 hover:text-white px-3 py-1.5 rounded text-xs font-bold transition-all">View Project</button>
             </div>
