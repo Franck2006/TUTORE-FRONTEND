@@ -11,7 +11,8 @@ const projects: Type.Project[] = [
         author:{
             image:"https://i.pinimg.com/736x/eb/76/a4/eb76a46ab920d056b02d203ca95e9a22.jpg",
             name:"dan",
-            lastname:"akd"
+            lastname:"akd",
+            project_link:""
         }
     },
      {
@@ -23,7 +24,8 @@ const projects: Type.Project[] = [
         author:{
             image:"https://i.pinimg.com/736x/a6/a5/fb/a6a5fba4c19b8297117275ade107c205.jpg",
             name:"victor",
-            lastname:"wa"
+            lastname:"wa",
+            project_link:""
         }
     },
      {
@@ -35,10 +37,11 @@ const projects: Type.Project[] = [
         author:{
             image:"https://i.pinimg.com/736x/eb/76/a4/eb76a46ab920d056b02d203ca95e9a22.jpg",
             name:"franck",
-            lastname:"amani"
+            lastname:"amani",
+            project_link:""
         }
     },
-     {
+    {
         id: 1,
         title: "Project 1",
         description: "Description of Project 1",
@@ -47,10 +50,10 @@ const projects: Type.Project[] = [
         author:{
             image:"https://i.pinimg.com/736x/83/cc/b8/83ccb84db878aa483257cd0e8b6dd354.jpg",
             name:"dan",
-            lastname:"akd"
+            lastname:"akd",
+            project_link:""
         }
     }
-
 ]
   return (
     <>
@@ -77,7 +80,10 @@ const projects: Type.Project[] = [
                     <img className="w-8 h-8 rounded-full border  border-slate-700" data-alt="Male developer profile picture" src={project.author.image}/>
                     <span className="text-xs font-medium  text-slate-400 capitalize">{project.author.name} {project.author.lastname}</span>
                 </div>
-                <button className="bg-primary/10 hover:bg-primary text-primary text-white/50 hover:text-white px-3 py-1.5 rounded text-xs font-bold transition-all">View Project</button>
+                <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+                     <button className="bg-primary/10 hover:bg-primary text-primary text-white/50 hover:text-white px-3 py-1.5 rounded text-xs font-bold transition-all">View Project</button>
+                </a>
+               
             </div>
         </div>
         ))}
