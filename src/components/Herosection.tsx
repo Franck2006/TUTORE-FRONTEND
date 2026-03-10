@@ -1,13 +1,13 @@
 export default function Herosection() {
   return (
     // <div className=" border border-[rgba(225,225,225,0.1)] text-white h-[40vh] mt-20 rounded-xl p-5">
-    <div className=" flex flex-col justify-between  gap-y-5 mt-20 text-white overflow-hidden rounded-xl bg-slate-800/.1 p-8 md:p-12 border border-slate-800  md:h-[40vh] bg-[url('https://i.pinimg.com/1200x/7d/53/a1/7d53a136a35e8f6fae0d376cec4f1347.jpg')] bg-no-repeat bg-cover bg-center ">
+    <div className=" flex flex-col justify-between  gap-y-5 mt-20 text-white overflow-hidden rounded-xl bg-slate-900/.1 p-8 md:p-12 border border-slate-800  md:h-[40vh] bg-[url('https://i.pinimg.com/1200x/7d/53/a1/7d53a136a35e8f6fae0d376cec4f1347.jpg')] bg-no-repeat bg-cover bg-center ">
         <div className=" flex flex-col gap-3 ">
-            <p className=" first-letter:capitalize text-5xl font-bold ">
-                this is the site of developers 
+            <p className=" first-letter:capitalize text-5xl font-bold text-shadow-gray-900">
+                projet tutore group 822
             </p>
-            <p>
-                this is the description
+            <p className=" md:text-2xl  max-w-[800px] text-shadow-4xl">
+                la galerie de projects du groupe 822, explorez les projets de vos camarades et trouvez l'inspiration pour votre propre projet de fin d'etude
             </p>
         </div>
        <div className=" flex gap-x-3 flex-col gap-y-3 md:flex-row">
