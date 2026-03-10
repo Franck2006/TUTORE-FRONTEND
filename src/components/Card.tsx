@@ -1,4 +1,4 @@
-import { House } from "lucide-react"
+// import { House } from "lucide-react"
 import type { Type } from "../Type"
 
 const Card = () => {

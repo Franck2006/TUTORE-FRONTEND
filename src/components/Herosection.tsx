@@ -3,7 +3,7 @@ export default function Herosection() {
     <div className=" flex flex-col justify-between  gap-y-5 mt-20 text-white overflow-hidden rounded-xl bg-slate-900/.1 p-8 md:p-12 border border-slate-800  md:h-[40vh] bg-[url('https://i.pinimg.com/736x/14/d3/32/14d3329b7bcbe329584cbbdd8272086c.jpg')] bg-no-repeat bg-cover bg-center ">
         <div className=" flex flex-col gap-3 ">
             <p className=" first-letter:capitalize text-5xl font-bold text-shadow-gray-900">
-                projet tutore group 822
+                projet tutoré group 822
             </p>
             <p className=" md:text-2xl  max-w-[800px] text-shadow-4xl">
                 la galerie de projects du groupe 822, explorez les projets de vos camarades et trouvez l'inspiration pour votre propre projet de fin d'etude
