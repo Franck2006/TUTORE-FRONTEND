@@ -1,11 +1,11 @@
 function Navbar() {
   return (
-    <nav className=" flex items-center justify-between z-50 px-12 border border-[rgba(225,225,225,0.1)] py-1 fixed top-0 left-0 right-0 ">
+    <nav className=" flex items-center gap-x-2  md:gap-0 justify-between z-50 md:px-12 border border-[rgba(225,225,225,0.1)] py-1 fixed top-0 left-0 right-0 ">
       <div className=" flex gap-0.5">
-        <div className=" capitalize cursor-pointer text-[12px] font-extrabold flex items-center justify-center h-10 w-10 text-white rounded-md bg-blue-900">
+        <div className=" capitalize cursor-pointer text-[12px] font-extrabold flex items-center justify-center h-8 w-8 md:h-10 md:w-10 text-white rounded-md bg-blue-900">
           a.v.f
         </div>
-        <div className="flex flex-col text-[10px] text-white">
+        <div className="hidden md:flex flex-col text-[10px] text-white">
           <p>akd</p>
           <p>vic</p>
           <p>fr</p>
