@@ -1,3 +1,4 @@
+import { House } from "lucide-react"
 import type { Type } from "../Type"
 
 const Card = () => {
@@ -73,7 +74,7 @@ const projects: Type.Project[] = [
                     <h3 className="font-bold text-lg  text-white group-hover:text-primary transition-colors">Skyline Analytics</h3>
                     <span className="material-icons text-slate-400 hover:text-primary cursor-pointer text-xl">bookmark_border</span>
                 </div>
-                <p className=" text-slate-400 text-sm line-clamp-2 leading-relaxed">A high-performance real-time data visualization dashboard for distributed cloud systems and microservices.</p>
+                <p className=" text-slate-400 text-sm line-clamp-2 leading-relaxed"> high-performance real-time data visualization dashboard for distributed cloud systems and microservices.</p>
             </div>
             <div className="px-5 pb-5 flex items-center justify-between mt-auto border-t  border-slate-800/50 pt-4">
                 <div className="flex items-center gap-2">
