@@ -1,6 +1,6 @@
 export default function Herosection() {
   return (
-    <div className=" flex flex-col justify-between  gap-y-5 mt-20 text-white overflow-hidden rounded-xl bg-slate-900/.1 p-8 md:p-12 border border-slate-800  md:h-[40vh] bg-[url('https://i.pinimg.com/1200x/7d/53/a1/7d53a136a35e8f6fae0d376cec4f1347.jpg')] bg-no-repeat bg-cover bg-center ">
+    <div className=" flex flex-col justify-between  gap-y-5 mt-20 text-white overflow-hidden rounded-xl bg-slate-900/.1 p-8 md:p-12 border border-slate-800  md:h-[40vh] bg-[url('https://i.pinimg.com/736x/14/d3/32/14d3329b7bcbe329584cbbdd8272086c.jpg')] bg-no-repeat bg-cover bg-center ">
         <div className=" flex flex-col gap-3 ">
             <p className=" first-letter:capitalize text-5xl font-bold text-shadow-gray-900">
                 projet tutore group 822
