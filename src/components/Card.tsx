@@ -1,95 +1,95 @@
-// import { House } from "lucide-react"
 import type { Type } from "../Type"
+import dan_1 from "../assets/dan-1.png"
 
 const Card = () => {
-const projects: Type.Project[] = [
-    {
-        id: 1,
-        title: "Project 1",
-        description: "Description of Project 1",
-        imageUrl: "https://i.pinimg.com/736x/b2/61/13/b261131de5f2998908ff3859fba8301e.jpg",
-        technologies: ["React", "TypeScript", "Tailwind CSS"],
-        author:{
-            image:"https://i.pinimg.com/736x/eb/76/a4/eb76a46ab920d056b02d203ca95e9a22.jpg",
-            name:"dan",
-            lastname:"akd",
-            project_link:""
+    const projects: Type.Project[] = [
+        {
+            id: 1,
+            title: "Project 1",
+            description: "Description of Project 1",
+            imageUrl: dan_1,
+            technologies: ["React", "TypeScript", "Tailwind CSS"],
+            author: {
+                image: dan_1,
+                name: "dan",
+                lastname: "akd",
+                project_link: "https://dantutorats.netlify.app/"
+            }
+        },
+        {
+            id: 1,
+            title: "Project 1",
+            description: "Description of Project 1",
+            imageUrl: "https://i.pinimg.com/736x/d6/04/ef/d604efa83a2588a4cf6f3e55ed5b9a22.jpg",
+            technologies: ["React", "TypeScript", "Tailwind CSS"],
+            author: {
+                image: "https://i.pinimg.com/736x/a6/a5/fb/a6a5fba4c19b8297117275ade107c205.jpg",
+                name: "victor",
+                lastname: "wa",
+                project_link: ""
+            }
+        },
+        {
+            id: 1,
+            title: "Project 1",
+            description: "Description of Project 1",
+            imageUrl: "https://i.pinimg.com/1200x/6a/34/49/6a3449c78170c5bc54683843ca2c59eb.jpg",
+            technologies: ["React", "TypeScript", "Tailwind CSS"],
+            author: {
+                image: "https://i.pinimg.com/736x/eb/76/a4/eb76a46ab920d056b02d203ca95e9a22.jpg",
+                name: "franck",
+                lastname: "amani",
+                project_link: ""
+            }
+        },
+        {
+            id: 1,
+            title: "Project 1",
+            description: "Description of Project 1",
+            imageUrl: "https://i.pinimg.com/1200x/dc/de/5d/dcde5dd451acb6520cdd19820f7f1e38.jpg",
+            technologies: ["React", "TypeScript", "Tailwind CSS"],
+            author: {
+                image: "https://i.pinimg.com/736x/83/cc/b8/83ccb84db878aa483257cd0e8b6dd354.jpg",
+                name: "dan",
+                lastname: "akd",
+                project_link: ""
+            }
         }
-    },
-     {
-        id: 1,
-        title: "Project 1",
-        description: "Description of Project 1",
-        imageUrl: "https://i.pinimg.com/736x/d6/04/ef/d604efa83a2588a4cf6f3e55ed5b9a22.jpg",
-        technologies: ["React", "TypeScript", "Tailwind CSS"],
-        author:{
-            image:"https://i.pinimg.com/736x/a6/a5/fb/a6a5fba4c19b8297117275ade107c205.jpg",
-            name:"victor",
-            lastname:"wa",
-            project_link:""
-        }
-    },
-     {
-        id: 1,
-        title: "Project 1",
-        description: "Description of Project 1",
-        imageUrl: "https://i.pinimg.com/1200x/6a/34/49/6a3449c78170c5bc54683843ca2c59eb.jpg",
-        technologies: ["React", "TypeScript", "Tailwind CSS"],
-        author:{
-            image:"https://i.pinimg.com/736x/eb/76/a4/eb76a46ab920d056b02d203ca95e9a22.jpg",
-            name:"franck",
-            lastname:"amani",
-            project_link:""
-        }
-    },
-    {
-        id: 1,
-        title: "Project 1",
-        description: "Description of Project 1",
-        imageUrl: "https://i.pinimg.com/1200x/dc/de/5d/dcde5dd451acb6520cdd19820f7f1e38.jpg",
-        technologies: ["React", "TypeScript", "Tailwind CSS"],
-        author:{
-            image:"https://i.pinimg.com/736x/83/cc/b8/83ccb84db878aa483257cd0e8b6dd354.jpg",
-            name:"dan",
-            lastname:"akd",
-            project_link:""
-        }
-    }
-]
-  return (
-    <>
-        {projects.map( (project: Type.Project): any => (
-        <div 
-            className="group bg-slate-800/40 border  border-slate-800 rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-primary/5 transition-all duration-300 flex flex-col"
-            key={project.id}
-        >
-            <div className="aspect-video relative overflow-hidden  bg-slate-800">
-                <img className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Code editor interface with syntax highlighting" src={project.imageUrl}/>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                    <span className="text-white text-xs font-medium bg-primary/80 backdrop-blur px-2 py-1 rounded">Next.js + Tailwind</span>
-                </div>
-            </div>
-            <div className="p-5 flex-1">
-                <div className="flex justify-between items-start mb-2">
-                    <h3 className="font-bold text-lg  text-white group-hover:text-primary transition-colors">Skyline Analytics</h3>
-                    <span className="material-icons text-slate-400 hover:text-primary cursor-pointer text-xl">bookmark_border</span>
-                </div>
-                <p className=" text-slate-400 text-sm line-clamp-2 leading-relaxed"> high-performance real-time data visualization dashboard for distributed cloud systems and microservices.</p>
-            </div>
-            <div className="px-5 pb-5 flex items-center justify-between mt-auto border-t  border-slate-800/50 pt-4">
-                <div className="flex items-center gap-2">
-                    <img className="w-8 h-8 rounded-full border  border-slate-700" data-alt="Male developer profile picture" src={project.author.image}/>
-                    <span className="text-xs font-medium  text-slate-400 capitalize">{project.author.name} {project.author.lastname}</span>
-                </div>
-                <a href="https://google.com" target="_blank" rel="noopener noreferrer">
-                     <button className="bg-primary/10 hover:bg-primary text-primary text-white/50 hover:text-white px-3 py-1.5 rounded text-xs font-bold transition-all">View Project</button>
-                </a>
-               
-            </div>
-        </div>
-        ))}
-    </>
-  )
+    ]
+    return (
+        <>
+            {projects.map((project: Type.Project): any => (
+                <div
+                    className="group bg-slate-800/40 border  border-slate-800 rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-primary/5 transition-all duration-300 flex flex-col"
+                    key={project.id}
+                >
+                    <div className="aspect-video relative overflow-hidden  bg-slate-800">
+                        <img className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Code editor interface with syntax highlighting" src={project.imageUrl} />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                            <span className="text-white text-xs font-medium bg-primary/80 backdrop-blur px-2 py-1 rounded">Next.js + Tailwind</span>
+                        </div>
+                    </div>
+                    <div className="p-5 flex-1">
+                        <div className="flex justify-between items-start mb-2">
+                            <h3 className="font-bold text-lg  text-white group-hover:text-primary transition-colors">Skyline Analytics</h3>
+                            <span className="material-icons text-slate-400 hover:text-primary cursor-pointer text-xl">bookmark_border</span>
+                        </div>
+                        <p className=" text-slate-400 text-sm line-clamp-2 leading-relaxed"> high-performance real-time data visualization dashboard for distributed cloud systems and microservices.</p>
+                    </div>
+                    <div className="px-5 pb-5 flex items-center justify-between mt-auto border-t  border-slate-800/50 pt-4">
+                        <div className="flex items-center gap-2">
+                            <img className="w-8 h-8 rounded-full border  border-slate-700" data-alt="Male developer profile picture" src={project.author.image} />
+                            <span className="text-xs font-medium  text-slate-400 capitalize">{project.author.name} {project.author.lastname}</span>
+                        </div>
+                        <a href={project.author.project_link} target="_blank" rel="noopener noreferrer">
+                            <button className="bg-primary/10 hover:bg-primary text-primary text-white/50 hover:text-white px-3 py-1.5 rounded text-xs font-bold transition-all">View Project</button>
+                        </a>
+
+                    </div>
+                </div >
+            ))}
+        </>
+    )
 }
 
 export default Card
